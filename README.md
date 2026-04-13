@@ -113,7 +113,7 @@ Pairwise correlation heatmaps (both on raw predictions and on residuals) are com
 | Meta-learner | Tuned GB (BayesSearchCV) |
 | Key finding | Ensemble diversity contributed more than individual model complexity |
 
-The ~4% improvement from custom stacking order and tuned meta-learner comes primarily from better decorrelation and a smarter composition strategy — same data, same feature set, better architecture.
+The ~4% improvement from custom stacking order and tuned meta-learner comes primarily from better decorrelation and a smarter composition strategy — same data, same feature set, better architecture. That said, the baseline performance itself is constrained by dataset size: ~3,041 samples offer limited variance for the models to learn from, and a larger, more diverse dataset would likely lift both the baseline and the ensemble ceiling considerably.
 
 ## Repository Structure
 

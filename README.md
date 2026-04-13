@@ -15,9 +15,9 @@
 
 ## Motivation
 
-Melting point is one of the most practically important thermophysical properties of a material — it governs processing routes, phase stability, and application suitability. Yet predicting it from molecular structure alone remains difficult because melting is a collective phenomenon sensitive to bond character, geometry, and intermolecular forces simultaneously. No single ML model captures all of these well.
+Melting point is one of the most practically important thermophysical properties of a material — it governs processing routes, phase stability, and application suitability. Yet predicting it from molecular structure alone remains difficult because melting is a collective phenomenon sensitive to bond character, geometry, and intermolecular forces simultaneously. Lobanov et al. ([2023](https://link.springer.com/article/10.1134/S1995080223010341)) showed that a two-level stacking ensemble — where decorrelated base learners feed into a meta-learner — can outperform individual models for melting point prediction of halides, precisely because the ensemble exploits complementary error patterns across model families.
 
-This project tackles that by building a **custom two-level stacking ensemble** that combines diverse base learners into a tuned meta-learner. The work reproduces and **extends** a published ensemble methodology originally applied to halides ([Lobanov et al., 2023](https://link.springer.com/article/10.1134/S1995080223010341)) — validating whether the same stacking strategy transfers to a different materials system (organic compounds) and whether custom stacking order can push accuracy further.
+This project **reproduces and extends** that methodology on a different materials system: ~3,041 organic compounds from Citrination. The extension tests whether the same stacking strategy generalizes beyond halides, and whether SHAP-guided feature selection and custom stacking order can push accuracy further than the original workflow.
 
 ## The Pipeline at a Glance
 
